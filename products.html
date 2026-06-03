@@ -53,9 +53,7 @@
         </nav>
     </header>
 
-    <!-- ==========================================================================
-     🔥 PROMO HERO BANNER SECTION (Ref: image_a34a24.jpg)
-     ========================================================================== -->
+    <!-- PROMO HERO BANNER SECTION -->
     <section class="products_hero_banner">
         <div class="hero_banner_overlay">
             <!-- Badge Title -->
@@ -78,28 +76,26 @@
         </div>
     </section>
 
-    <!-- Your existing "Our Products" heading section begins right below this line -->
-
 
     <!-- Main Products View Layer Component -->
     <main class="products_page_main">
 
         <!-- Hero Header Zone -->
-        <section class="products_hero_zone">
+        <div class="products_hero_zone">
             <h1>Our Products</h1>
             <p>Find the perfect gear for your next adventure</p>
-        </section>
+        </div>
 
         <!-- Filter Bar Component Row -->
-        <section class="catalog_filter_bar">
+        <div class="catalog_filter_bar">
             <div class="search_input_wrapper">
                 <input type="text" id="productSearchInput" placeholder="Search products...">
             </div>
             <div class="filter_dropdowns_group">
-                <span>All Categories ▾</span>
-                <span>Featured ▾</span>
+                <div>All Categories ▾</div>
+                <div>Featured ▾</div>
             </div>
-        </section>
+        </div>
 
         <!-- Hardcoded 4-Column Card Grid Container Layout -->
         <section class="products_catalog_container">
@@ -111,13 +107,13 @@
                             alt="Half Dome 2 Tent"></div>
                     <div class="catalog_details">
                         <span class="catalog_brand">REI Co-op</span>
-                        <h3 class="catalog_title">Half Dome 2 Tent with Footprint</h3>
+                        <h2 class="catalog_title">Half Dome 2 Tent with Footprint</h2>
                         <div class="catalog_stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star-half-stroke"></i <span class="rating_count">(37)</span>
+                            <i class="fa-regular fa-star-half-stroke"></i> <span class="rating_count">(37)</span>
                         </div>
                         <div class="catalog_footer_row">
                             <span class="catalog_price">$329.00</span>
@@ -135,7 +131,7 @@
                             alt="MegaMat Duo Sleeping Pad"></div>
                     <div class="catalog_details">
                         <span class="catalog_brand">Exped</span>
-                        <h3 class="catalog_title">MegaMat Duo Sleeping Pad</h3>
+                        <h2 class="catalog_title">MegaMat Duo Sleeping Pad</h2>
                         <div class="catalog_stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -160,7 +156,7 @@
                             alt="Tensor All-Season Insulated Pad"></div>
                     <div class="catalog_details">
                         <span class="catalog_brand">NEMO</span>
-                        <h3 class="catalog_title">Tensor All-Season Insulated Pad</h3>
+                        <h2 class="catalog_title">Tensor All-Season Insulated Pad</h2>
                         <div class="catalog_stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -184,7 +180,7 @@
                             alt="Atmos AG 65 Backpack"></div>
                     <div class="catalog_details">
                         <span class="catalog_brand">Osprey</span>
-                        <h3 class="catalog_title">Atmos AG 65 Backpack</h3>
+                        <h2 class="catalog_title">Atmos AG 65 Backpack</h2>
                         <div class="catalog_stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -208,7 +204,7 @@
                             alt="Everest 2X Camping Stove"></div>
                     <div class="catalog_details">
                         <span class="catalog_brand">Camp Chef</span>
-                        <h3 class="catalog_title">Everest 2X Camping Stove</h3>
+                        <h2 class="catalog_title">Everest 2X Camping Stove</h2>
                         <div class="catalog_stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -233,7 +229,7 @@
                             alt="Jetboil Flash Cooking System"></div>
                     <div class="catalog_details">
                         <span class="catalog_brand">Jetboil</span>
-                        <h3 class="catalog_title">Flash Backpacking Cooking System</h3>
+                        <h2 class="catalog_title">Flash Backpacking Cooking System</h2>
                         <div class="catalog_stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -258,7 +254,7 @@
                             alt="YETI Rambler 36 oz Bottle"></div>
                     <div class="catalog_details">
                         <span class="catalog_brand">YETI</span>
-                        <h3 class="catalog_title">Rambler 36 oz Vacuum Insulated Bottle</h3>
+                        <h2 class="catalog_title">Rambler 36 oz Vacuum Insulated Bottle</h2>
                         <div class="catalog_stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -282,7 +278,7 @@
                             alt="Helinox Chair One"></div>
                     <div class="catalog_details">
                         <span class="catalog_brand">Helinox</span>
-                        <h3 class="catalog_title">Chair One Lightweight Camp Chair</h3>
+                        <h2 class="catalog_title">Chair One Lightweight Camp Chair</h2>
                         <div class="catalog_stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -305,33 +301,6 @@
 
     </main>
 
-    <script src="style.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const grid = document.getElementById('catalogGrid');
-
-            // Dynamically build your 8 card catalog items seamlessly
-            CartEngine.products.forEach(product => {
-                const card = document.createElement('div');
-                card.className = 'catalog_product_card';
-                card.innerHTML = `
-                <div class="catalog_img_frame">
-                    <img src="${product.image}" alt="${product.name}">
-                </div>
-                <div class="catalog_details">
-                    <span class="catalog_brand">${product.brand}</span>
-                    <h3 class="catalog_title">${product.name}</h3>
-                    <div class="catalog_stars">★★★★★ <span class="rating_count">(48)</span></div>
-                    <div class="catalog_footer_row">
-                        <span class="catalog_price">$${product.price.toFixed(2)}</span>
-                        <button class="catalog_add_btn" onclick="CartEngine.addToCart(${product.id})">Add to Cart</button>
-                    </div>
-                </div>
-            `;
-                grid.appendChild(card);
-            });
-        });
-    </script>
 
     <!-- Footer Section -->
     <footer class="footer_outer">
