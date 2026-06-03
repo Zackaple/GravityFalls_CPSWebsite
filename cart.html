@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="site_header">
+        <nav class="navbar">
+
+            <!-- Hidden checkbox to power the responsive pure-CSS click toggle -->
+            <input type="checkbox" id="menu_toggle" class="menu_toggle_checkbox">
+
+            <!-- Mobile Mobile Trigger Label (Three Bars) -->
+            <label for="menu_toggle" class="hamburger_button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <!-- Left Zone: Nav Links -->
+            <div class="left_zone">
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Center Zone: Website Name-->
+            <div class="center_zone">
+                <a class="website_logo" href="index.html">Gravity Falls</a>
+            </div>
+
+            <!-- Right Zone: Utilities & Shopping Tools -->
+            <div class="right_zone">
+                <div class="search_box">
+                    <input type="search" placeholder="Search Camping Products">
+                    <i class="fa-solid fa-magnifying-glass search_icon"></i>
+                </div>
+                <a href="sign_in.html" class="utility_link signin_link">
+                    <i class="fa-regular fa-user"></i> Sign In
+                </a>
+                <a href="cart.html" class="utility_link cart_link">
+                    <i class="fa-solid fa-cart-shopping"></i> Cart
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="cart_page_main">
+        <div class="cart_split_layout">
+
+            <div class="cart_items_panel">
+                <h2>Your Adventure Pack</h2>
+
+                <div class="cart_list_container">
+                    <div class="cart_item_row">
+                        <div class="cart_row_img">
+                            <img src="images/camping_products/tents/Half_Dome_2_Tent.png" alt="Half Dome 2 Tent">
+                        </div>
+                        <div class="cart_row_info">
+                            <h4>Half Dome 2 Tent with Footprint</h4>
+                            <span class="sku_text">SKU: GF-1001-OR</span>
+                            <button type="button" class="remove_item_btn">Remove Item</button>
+                        </div>
+                        <div class="cart_row_actions">
+                            <div class="quantity_stepper">
+                                <button type="button">-</button>
+                                <span>1</span>
+                                <button type="button">+</button>
+                            </div>
+                            <span class="cart_row_price">$329.00</span>
+                        </div>
+                    </div>
+
+                    <div class="cart_item_row">
+                        <div class="cart_row_img">
+                            <img src="images/camping_products/backpacks/Atmos_AG_65_Backpack.png" alt="Atmos AG 65 Backpack">
+                        </div>
+                        <div class="cart_row_info">
+                            <h4>Atmos AG 65 Backpack</h4>
+                            <span class="sku_text">SKU: GF-4004-GR</span>
+                            <button type="button" class="remove_item_btn">Remove Item</button>
+                        </div>
+                        <div class="cart_row_actions">
+                            <div class="quantity_stepper">
+                                <button type="button">-</button>
+                                <span>1</span>
+                                <button type="button">+</button>
+                            </div>
+                            <span class="cart_row_price">$340.00</span>
+                        </div>
+                    </div>
+
+                    <div class="cart_item_row">
+                        <div class="cart_row_img">
+                            <img src="images/camping_products/lightings/path_to_your_lights_image.jpg" alt="Starlight Camp Lantern">
+                        </div>
+                        <div class="cart_row_info">
+                            <h4>Starlight Camp Lantern</h4>
+                            <span class="sku_text">SKU: GF-8008-TL</span>
+                            <button type="button" class="remove_item_btn">Remove Item</button>
+                        </div>
+                        <div class="cart_row_actions">
+                            <div class="quantity_stepper">
+                                <button type="button">-</button>
+                                <span>2</span>
+                                <button type="button">+</button>
+                            </div>
+                            <span class="cart_row_price">$119.90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart_summary_sidebar">
+                <div class="summary_card_sticky">
+                    <h3>Expedition Ledger</h3>
+                    <hr class="summary_hr">
+
+                    <div class="summary_row">
+                        <span>Gear Subtotal</span>
+                        <span>$788.90</span>
+                    </div>
+
+                    <div class="coupon_input_box">
+                        <input type="text" placeholder="Promo or Explorer Code">
+                        <button type="button">Apply</button>
+                    </div>
+
+                    <div class="summary_row">
+                        <span>Est. Backcountry Shipping</span>
+                        <span class="free_badge">Complimentary</span>
+                    </div>
+                    <div class="summary_row">
+                        <span>Local Wilderness Tax</span>
+                        <span>$0.00</span>
+                    </div>
+
+                    <hr class="summary_hr">
+                    <div class="summary_row total_row">
+                        <strong>Total Investment</strong>
+                        <strong>$788.90</strong>
+                    </div>
+
+                    <button class="checkout_btn" type="button">Secure To Checkout</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer_outer">
+        <div class="footer_container">
+
+            <div class="footer_main">
+
+                <div class="footer_column contact_col">
+                    <div class="website_logo">
+                        Gravity Falls
+                    </div>
+                    <h3>Contact Us</h3>
+                    <a class="contact_item" href="mailto:gravityfalls@gfs.com">
+                        <i class="fa-regular fa-envelope"></i> gravityfalls@gfs.com
+                    </a>
+                    <a class="contact_item" href="tel:1012010290125012">
+                        <i class="fa-solid fa-phone"></i> 1012-0102-9012-5012
+                    </a>
+                </div>
+
+                <div class="footer_column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="account.html">Account</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Our Community</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_column subscribe_col">
+                    <h3>SUBSCRIBE</h3>
+                    <p class="subscribe_message">Join our community for exclusive gear drops, outdoor tips, and 10% off
+                        your first order</p>
+                    <div class="subscribe_form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <h3>Follow Us</h3>
+                    <div class="social_icons">
+                        <a href="#" class="social_circle"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social_circle"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social_circle"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social_circle"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer_bottom">
+                <div class="bottom_links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms & Condition</a>
+                </div>
+                <p class="copyright">© 2026, Camping Sales Product</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

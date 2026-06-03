@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Sign-Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="site_header">
+        <nav class="navbar auth-header-style">
+
+            <!-- Hidden checkbox to power the responsive pure-CSS click toggle -->
+            <input type="checkbox" id="menu_toggle" class="menu_toggle_checkbox">
+
+            <!-- Mobile Mobile Trigger Label (Three Bars) -->
+            <label for="menu_toggle" class="hamburger_button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <!-- Left Zone: Nav Links -->
+            <div class="left_zone">
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Center Zone: Website Name-->
+            <div class="center_zone">
+                <a class="website_logo" href="index.html">Gravity Falls</a>
+            </div>
+
+            <!-- Right Zone: Utilities & Shopping Tools -->
+            <div class="right_zone">
+                <a href="sign_in.html" class="utility_link signin_link">
+                    <i class="fa-regular fa-user"></i> Sign In
+                </a>
+                <a href="cart.html" class="utility_link cart_link">
+                    <i class="fa-solid fa-cart-shopping"></i> Cart
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Sign Up Section -->
+    <!-- Main Auth Page Layout wrapper container -->
+    <main class="auth_page_container">
+        <div class="auth_split_card">
+
+            <!-- 🏔️ Left Side: Reuses same styling class as the sign in view state element row -->
+            <div class="auth_brand_side">
+                <div class="brand_logo_row">
+                    <span class="logo_icon_badge"></span>
+                    <span class="logo_text_brand">Gravity Falls</span>
+                </div>
+                <div class="brand_promo_content">
+                    <h2>Your next adventure begins here</h2>
+                    <p>Reconnect with the Gravity Falls community and gear up with field-tested utility built for the
+                        great outdoors.</p>
+
+                    <div class="carousel_indicators_row">
+                        <span class="indicator_dot active"></span>
+                        <span class="indicator_dot"></span>
+                        <span class="indicator_dot"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 📥 Right Side: Dynamic Sign Up Form Module (Matches image_9d2438.png adjustments) -->
+            <div class="auth_form_side">
+                <div class="form_header_block">
+                    <h2>Create your account</h2>
+                    <p>Get started with your free basecamp account</p>
+                </div>
+
+                <form class="auth_action_form">
+                    <div class="form_input_group">
+                        <label for="signup_name">Full Name</label>
+                        <input type="text" id="signup_name" placeholder="e.g., Zachary Khant" required>
+                    </div>
+
+                    <div class="form_input_group">
+                        <label for="signup_email">Your Email</label>
+                        <input type="email" id="signup_email" placeholder="e.g., example@example.com" required>
+                    </div>
+
+                    <div class="form_input_group">
+                        <label for="signup_password">Password</label>
+                        <input type="password" id="signup_password" placeholder="••••••••" required>
+                    </div>
+
+                    <div class="form_input_group">
+                        <label for="signup_confirm_password">Confirm Password</label>
+                        <input type="password" id="signup_confirm_password" placeholder="••••••••" required>
+                    </div>
+
+                    <!-- Terms Validation Checkbox Element -->
+                    <div class="form_utilities_row">
+                        <label class="custom_checkbox_container">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#" class="inline_policy_link">Terms of Service and Privacy
+                                Policy</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="auth_submit_btn">Sign up</button>
+                </form>
+
+                <div class="social_divider_bar"><span>Or Continue With</span></div>
+                <div class="social_btn_grid">
+                    <button type="button" class="social_auth_btn google_btn">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23EA4335' d='M12 5c1.6 0 3 .6 4.1 1.7l3.1-3.1C17.3 1.8 14.8 1 12 1 7.3 1 3.4 3.7 1.6 7.7l3.7 2.9C6.2 7.2 8.9 5 12 5z'/><path fill='%234285F4' d='M23.5 12.3c0-.8-.1-1.7-.2-2.3H12v4.4h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.7z'/><path fill='%23FBBC05' d='M5.3 14.8c-.2-.7-.3-1.5-.3-2.3s.1-1.6.3-2.3L1.6 7.3C.6 9.2 0 11.4 0 13.5s.6 4.3 1.6 6.2l3.7-2.9z'/><path fill='%2334A853' d='M12 23c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3.1 0-5.8-2.2-6.7-5.6L1.6 15.6C3.4 19.6 7.3 23 12 23z'/></svg>"
+                            alt="Google logo icon">
+                        Continue with Google
+                    </button>
+                    <button type="button" class="social_auth_btn facebook_btn">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%231877F2' d='M24 12a12 12 0 1 0-13.88 11.85v-8.38H7.08V12h3.04V9.35c0-3 1.8-4.66 4.52-4.66 1.3 0 2.66.23 2.66.23v2.93h-1.5c-1.48 0-1.94.92-1.94 1.87V12h3.3l-.53 3.47h-2.77v8.38A12 12 0 0 0 24 12z'/></svg>"
+                            alt="Facebook logo icon">
+                        Continue with Facebook
+                    </button>
+                </div>
+
+                <p class="auth_switch_foot">Already have an account? <a href="sign_in.html">Log In</a></p>
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer class="footer_outer">
+        <div class="footer_container">
+
+            <div class="footer_main">
+
+                <div class="footer_column contact_col">
+                    <div class="website_logo">
+                        Gravity Falls
+                    </div>
+                    <h3>Contact Us</h3>
+                    <a class="contact_item" href="mailto:gravityfalls@gfs.com">
+                        <i class="fa-regular fa-envelope"></i> gravityfalls@gfs.com
+                    </a>
+                    <a class="contact_item" href="tel:1012010290125012">
+                        <i class="fa-solid fa-phone"></i> 1012-0102-9012-5012
+                    </a>
+                </div>
+
+                <div class="footer_column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="sign_in.html">Account</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Our Community</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_column subscribe_col">
+                    <h3>SUBSCRIBE</h3>
+                    <p class="subscribe_message">Join our community for exclusive gear drops, outdoor tips, and 10% off
+                        your first order</p>
+                    <div class="subscribe_form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <h3>Follow Us</h3>
+                    <div class="social_icons">
+                        <a href="#" class="social_circle"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social_circle"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social_circle"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social_circle"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer_bottom">
+                <div class="bottom_links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms & Condition</a>
+                </div>
+                <p class="copyright">© 2026, Camping Sales Product</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

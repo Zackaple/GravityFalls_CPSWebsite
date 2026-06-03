@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity Falls Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="site_header">
+        <nav class="navbar">
+
+            <!-- Hidden checkbox to power the responsive pure-CSS click toggle -->
+            <input type="checkbox" id="menu_toggle" class="menu_toggle_checkbox">
+
+            <!-- Mobile Mobile Trigger Label (Three Bars) -->
+            <label for="menu_toggle" class="hamburger_button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <!-- Left Zone: Nav Links -->
+            <div class="left_zone">
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Center Zone: Website Name-->
+            <div class="center_zone">
+                <a class="website_logo" href="index.html">Gravity Falls</a>
+            </div>
+
+            <!-- Right Zone: Utilities & Shopping Tools -->
+            <div class="right_zone">
+                <div class="search_box">
+                    <input type="search" placeholder="Search Camping Products">
+                    <i class="fa-solid fa-magnifying-glass search_icon"></i>
+                </div>
+                <a href="sign_in.html" class="utility_link signin_link">
+                    <i class="fa-regular fa-user"></i> Sign In
+                </a>
+                <a href="cart.html" class="utility_link cart_link">
+                    <i class="fa-solid fa-cart-shopping"></i> Cart
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact_hero">
+
+        <img src="images/camping_scenery/Hero2.jpg" alt="Gravity Falls Basecamp Expedition" class="contact_hero_img">
+
+        <div class="hero_dark_overlay"></div>
+
+        <div class="hero_container">
+            <div class="hero_content">
+                <h1>Contact us</h1>
+                <p>Have a question about our field-tested gear or planning your next great trek? <br>We’re here to help
+                    you gear up. Drop us a line and let’s get your next adventure started.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Main Contact Container Block -->
+    <section class="contact_wrapper">
+        <div class="contact_grid_box">
+
+            <!-- LEFT PANEL: Get In Touch & Details -->
+            <div class="info_panel">
+                <h2>Get in touch</h2>
+                <p class="panel_subtext">Reach out to us through any of our official channels below.</p>
+
+                <div class="contact_info_list">
+                    <!-- Head Office -->
+                    <div class="info_item">
+                        <div class="icon_circle"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info_text">
+                            <h3>Head Office</h3>
+                            <p>Gravity Falls, Oregon, USA</p>
+                        </div>
+                    </div>
+
+                    <!-- Email Us -->
+                    <div class="info_item">
+                        <div class="icon_circle"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info_text">
+                            <h3>Email Us</h3>
+                            <p>gravityfalls@gfs.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Us -->
+                    <div class="info_item">
+                        <div class="icon_circle"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info_text">
+                            <h3>Contact Us</h3>
+                            <p>1012-0102-9012-5012</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="panel_divider">
+
+                <!-- Social Media -->
+                <div class="socials_zone">
+                    <h3>Follow our social media</h3>
+                    <div class="social_icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT PANEL: Send Us A Message Form -->
+            <div class="form_panel">
+                <h2>Send us a message</h2>
+                <form action="#" class="contact_form">
+
+                    <div class="form_row_double">
+                        <div class="form_group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form_group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="e.g., +15 (555) 555-5555">
+                        </div>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="e.g., example@example.com" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="How can we help you?">
+                    </div>
+
+                    <div class="form_group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit_btn">Send</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Google Map Section -->
+    <section class="map_section">
+        <!-- Replace the source URL with your actual Google Maps embed link later -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11820748.992453685!2d-131.16555861668706!3d43.670528636986916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54936e7c9b9f6a55%3A0x7d4c65db7a0bb876!2sOregon%2C%20USA!5e0!3m2!1sen!2smm!4v1780485650117!5m2!1sen!2smm"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer_outer">
+        <div class="footer_container">
+
+            <div class="footer_main">
+
+                <div class="footer_column contact_col">
+                    <div class="website_logo">
+                        Gravity Falls
+                    </div>
+                    <h3>Contact Us</h3>
+                    <a class="contact_item" href="mailto:gravityfalls@gfs.com">
+                        <i class="fa-regular fa-envelope"></i> gravityfalls@gfs.com
+                    </a>
+                    <a class="contact_item" href="tel:1012010290125012">
+                        <i class="fa-solid fa-phone"></i> 1012-0102-9012-5012
+                    </a>
+                </div>
+
+                <div class="footer_column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="account.html">Account</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Our Community</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_column subscribe_col">
+                    <h3>SUBSCRIBE</h3>
+                    <p class="subscribe_message">Join our community for exclusive gear drops, outdoor tips, and 10% off
+                        your first order</p>
+                    <div class="subscribe_form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <h3>Follow Us</h3>
+                    <div class="social_icons">
+                        <a href="#" class="social_circle"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social_circle"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social_circle"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social_circle"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer_bottom">
+                <div class="bottom_links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms & Condition</a>
+                </div>
+                <p class="copyright">© 2026, Camping Sales Product</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

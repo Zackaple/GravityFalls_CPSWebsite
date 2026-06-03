@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="site_header">
+        <nav class="navbar auth-header-style">
+
+            <!-- Hidden checkbox to power the responsive pure-CSS click toggle -->
+            <input type="checkbox" id="menu_toggle" class="menu_toggle_checkbox">
+
+            <!-- Mobile Mobile Trigger Label (Three Bars) -->
+            <label for="menu_toggle" class="hamburger_button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+
+            <!-- Left Zone: Nav Links -->
+            <div class="left_zone">
+                <ul class="nav_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Center Zone: Website Name-->
+            <div class="center_zone">
+                <a class="website_logo" href="index.html">Gravity Falls</a>
+            </div>
+
+            <!-- Right Zone: Utilities & Shopping Tools -->
+            <div class="right_zone">
+                <a href="sign_in.html" class="utility_link signin_link">
+                    <i class="fa-regular fa-user"></i> Sign In
+                </a>
+                <a href="cart.html" class="utility_link cart_link">
+                    <i class="fa-solid fa-cart-shopping"></i> Cart
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- ==========================================================================
+     🔥 PROMO HERO BANNER SECTION (Ref: image_a34a24.jpg)
+     ========================================================================== -->
+    <section class="products_hero_banner">
+        <div class="hero_banner_overlay">
+            <!-- Badge Title -->
+            <span class="promo_badge_tag">Deal of the Week</span>
+
+            <!-- Product Label -->
+            <h3 class="promo_product_title">Leef Mummy Short<br>20°F Sleeping Bag - Fireslate</h3>
+
+            <!-- Large Discount Callout -->
+            <h2 class="promo_percentage_claim">40% OFF</h2>
+
+            <!-- Pricing Row Grid -->
+            <div class="promo_pricing_row">
+                <span class="promo_current_price">$41.99</span>
+                <span class="promo_original_price">$69.99</span>
+            </div>
+
+            <!-- Interactive Shop Button -->
+            <a href="#" class="promo_shop_btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Your existing "Our Products" heading section begins right below this line -->
+
+
+    <!-- Main Products View Layer Component -->
+    <main class="products_page_main">
+
+        <!-- Hero Header Zone -->
+        <section class="products_hero_zone">
+            <h1>Our Products</h1>
+            <p>Find the perfect gear for your next adventure</p>
+        </section>
+
+        <!-- Filter Bar Component Row -->
+        <section class="catalog_filter_bar">
+            <div class="search_input_wrapper">
+                <input type="text" id="productSearchInput" placeholder="Search products...">
+            </div>
+            <div class="filter_dropdowns_group">
+                <span>All Categories ▾</span>
+                <span>Featured ▾</span>
+            </div>
+        </section>
+
+        <!-- Hardcoded 4-Column Card Grid Container Layout -->
+        <section class="products_catalog_container">
+            <div class="products_4col_grid">
+
+                <!-- Card 1 -->
+                <div class="catalog_product_card">
+                    <div class="catalog_img_frame"><img src="images/camping_products/tents/Half_Dome_2_Tent.png"
+                            alt="Half Dome 2 Tent"></div>
+                    <div class="catalog_details">
+                        <span class="catalog_brand">REI Co-op</span>
+                        <h3 class="catalog_title">Half Dome 2 Tent with Footprint</h3>
+                        <div class="catalog_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i <span class="rating_count">(37)</span>
+                        </div>
+                        <div class="catalog_footer_row">
+                            <span class="catalog_price">$329.00</span>
+                            <button class="catalog_add_btn"
+                                onclick="CartEngine.addToCart(1, 'Half Dome 2 Tent with Footprint', 329.00, 'images/camping_products/tents/Half_Dome_2_Tent.png')">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="catalog_product_card">
+                    <div class="catalog_img_frame"><img
+                            src="images/camping_products/sleeping_bags/MegaMat_Duo_SleepingPad.png"
+                            alt="MegaMat Duo Sleeping Pad"></div>
+                    <div class="catalog_details">
+                        <span class="catalog_brand">Exped</span>
+                        <h3 class="catalog_title">MegaMat Duo Sleeping Pad</h3>
+                        <div class="catalog_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rating_count">(47)</span>
+                        </div>
+                        <div class="catalog_footer_row">
+                            <span class="catalog_price">$399.95</span>
+                            <button class="catalog_add_btn"
+                                onclick="CartEngine.addToCart(2, 'MegaMat Duo Sleeping Pad', 399.95, 'images/camping_products/sleeping_bags/MegaMat_Duo_SleepingPad.png')">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="catalog_product_card">
+                    <div class="catalog_img_frame"><img
+                            src="images/camping_products/sleeping_bags/Tensor_All-Season_Insulated_SleepingPad.png"
+                            alt="Tensor All-Season Insulated Pad"></div>
+                    <div class="catalog_details">
+                        <span class="catalog_brand">NEMO</span>
+                        <h3 class="catalog_title">Tensor All-Season Insulated Pad</h3>
+                        <div class="catalog_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="rating_count">(111)</span>
+                        </div>
+                        <div class="catalog_footer_row">
+                            <span class="catalog_price">$199.95</span>
+                            <button class="catalog_add_btn"
+                                onclick="CartEngine.addToCart(3, 'Tensor All-Season Insulated Pad', 199.95, 'images/camping_products/sleeping_bags/Tensor_All-Season_Insulated_SleepingPad.png')">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="catalog_product_card">
+                    <div class="catalog_img_frame"><img src="images/camping_products/backpacks/Atmos_AG_65_Backpack.png"
+                            alt="Atmos AG 65 Backpack"></div>
+                    <div class="catalog_details">
+                        <span class="catalog_brand">Osprey</span>
+                        <h3 class="catalog_title">Atmos AG 65 Backpack</h3>
+                        <div class="catalog_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rating_count">(82)</span>
+                        </div>
+                        <div class="catalog_footer_row">
+                            <span class="catalog_price">$340.00</span>
+                            <button class="catalog_add_btn"
+                                onclick="CartEngine.addToCart(4, 'Atmos AG 65 Backpack', 340.00, 'images/camping_products/backpacks/Atmos_AG_65_Backpack.png')">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="catalog_product_card">
+                    <div class="catalog_img_frame"><img src="images/camping_products/stoves/Everest2X_Camping_Stove.png"
+                            alt="Everest 2X Camping Stove"></div>
+                    <div class="catalog_details">
+                        <span class="catalog_brand">Camp Chef</span>
+                        <h3 class="catalog_title">Everest 2X Camping Stove</h3>
+                        <div class="catalog_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="rating_count">(54)</span>
+                        </div>
+                        <div class="catalog_footer_row">
+                            <span class="catalog_price">$180.00</span>
+                            <button class="catalog_add_btn"
+                                onclick="CartEngine.addToCart(5, 'Everest 2X Camping Stove', 180.00, 'images/camping_products/stoves/Everest2X_Camping_Stove.png')">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="catalog_product_card">
+                    <div class="catalog_img_frame"><img
+                            src="images/camping_products/stoves/Jetboil_Flash_Cooking_System.png"
+                            alt="Jetboil Flash Cooking System"></div>
+                    <div class="catalog_details">
+                        <span class="catalog_brand">Jetboil</span>
+                        <h3 class="catalog_title">Flash Backpacking Cooking System</h3>
+                        <div class="catalog_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="rating_count">(452)</span>
+                        </div>
+                        <div class="catalog_footer_row">
+                            <span class="catalog_price">$185.00</span>
+                            <button class="catalog_add_btn"
+                                onclick="CartEngine.addToCart(6, 'Stormbreak 2 Tent', 185.00, 'images/camping_products/stoves/Jetboil_Flash_Cooking_System.png')">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="catalog_product_card">
+                    <div class="catalog_img_frame"><img
+                            src="images/camping_products/bottles/YETI_Rambler_36oz_Bottle.png"
+                            alt="YETI Rambler 36 oz Bottle"></div>
+                    <div class="catalog_details">
+                        <span class="catalog_brand">YETI</span>
+                        <h3 class="catalog_title">Rambler 36 oz Vacuum Insulated Bottle</h3>
+                        <div class="catalog_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="rating_count">(512)</span>
+                        </div>
+                        <div class="catalog_footer_row">
+                            <span class="catalog_price">$99.95</span>
+                            <button class="catalog_add_btn"
+                                onclick="CartEngine.addToCart(7, 'Trailblazer Trekking Poles', 99.95, 'images/camping_products/bottles/YETI_Rambler_36oz_Bottle.png')">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="catalog_product_card">
+                    <div class="catalog_img_frame"><img src="images/camping_products/chairs/Helinox_Chair_One.png"
+                            alt="Helinox Chair One"></div>
+                    <div class="catalog_details">
+                        <span class="catalog_brand">Helinox</span>
+                        <h3 class="catalog_title">Chair One Lightweight Camp Chair</h3>
+                        <div class="catalog_stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <span class="rating_count">(40)</span>
+                        </div>
+                        <div class="catalog_footer_row">
+                            <span class="catalog_price">$59.95</span>
+                            <button class="catalog_add_btn"
+                                onclick="CartEngine.addToCart(8, 'Starlight Camp Lantern', 59.95, 'images/camping_products/chairs/Helinox_Chair_One.png')">Add
+                                to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="style.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const grid = document.getElementById('catalogGrid');
+
+            // Dynamically build your 8 card catalog items seamlessly
+            CartEngine.products.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'catalog_product_card';
+                card.innerHTML = `
+                <div class="catalog_img_frame">
+                    <img src="${product.image}" alt="${product.name}">
+                </div>
+                <div class="catalog_details">
+                    <span class="catalog_brand">${product.brand}</span>
+                    <h3 class="catalog_title">${product.name}</h3>
+                    <div class="catalog_stars">★★★★★ <span class="rating_count">(48)</span></div>
+                    <div class="catalog_footer_row">
+                        <span class="catalog_price">$${product.price.toFixed(2)}</span>
+                        <button class="catalog_add_btn" onclick="CartEngine.addToCart(${product.id})">Add to Cart</button>
+                    </div>
+                </div>
+            `;
+                grid.appendChild(card);
+            });
+        });
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="footer_outer">
+        <div class="footer_container">
+
+            <div class="footer_main">
+
+                <div class="footer_column contact_col">
+                    <div class="website_logo">
+                        Gravity Falls
+                    </div>
+                    <h3>Contact Us</h3>
+                    <a class="contact_item" href="mailto:gravityfalls@gfs.com">
+                        <i class="fa-regular fa-envelope"></i> gravityfalls@gfs.com
+                    </a>
+                    <a class="contact_item" href="tel:1012010290125012">
+                        <i class="fa-solid fa-phone"></i> 1012-0102-9012-5012
+                    </a>
+                </div>
+
+                <div class="footer_column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="account.html">Account</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_column">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Our Community</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer_column subscribe_col">
+                    <h3>SUBSCRIBE</h3>
+                    <p class="subscribe_message">Join our community for exclusive gear drops, outdoor tips, and 10% off
+                        your first order</p>
+                    <div class="subscribe_form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <h3>Follow Us</h3>
+                    <div class="social_icons">
+                        <a href="#" class="social_circle"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social_circle"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social_circle"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social_circle"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer_bottom">
+                <div class="bottom_links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms & Condition</a>
+                </div>
+                <p class="copyright">© 2026, Camping Sales Product</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
